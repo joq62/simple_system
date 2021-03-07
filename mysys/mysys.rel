@@ -1,0 +1,7 @@
+{release,
+ {"my_simple_system","1.0"},
+ {erts, "10.6.4"},
+ [{kernel, "6.5.1"},
+  {stdlib, "3.11.2"},
+  {sasl, "3.4.1"},
+  {mysys, "1.0.0"}]}.

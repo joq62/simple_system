@@ -4,7 +4,7 @@
 %%% 
 %%% Created : 10 dec 2012
 %%% -------------------------------------------------------------------
--module(mysys_eunit).   
+-module(mysys_eunit).    
    
 %% --------------------------------------------------------------------
 %% Include files
@@ -31,11 +31,11 @@ start()->
     ?assertEqual(ok,setup()),
    
     %% Start  application tests
-  %  ?assertEqual(ok,ping()),
-  %  ?assertEqual(ok,normal_case_1()),
+    ?assertEqual(ok,ping()),
+    ?assertEqual(ok,normal_case_1()),
     %% End application tests
  
-  %  ?assertEqual(ok,cleanup()),
+    ?assertEqual(ok,cleanup()),
     ?debugMsg(atom_to_list(?MODULE)++" : ENDED SUCCESSFUL ---------"),
     ok.
 
@@ -76,7 +76,8 @@ normal_case_1()->
 setup()->
   %  ?assertMatch({ok,_},adder:start()),
     ?assertMatch(ok,application:start(sasl)),
-  %  ?assertMatch(ok,application:start(front_end)),
+    ?assertMatch(ok,application:start(mysys)),
+  %  ?assertMatch({ok,_},mysys_sup:start_link()),
     ?debugMsg(?OK_MSG),
     ok.
 
@@ -87,9 +88,9 @@ setup()->
 %% -------------------------------------------------------------------    
 
 cleanup()->
-  
-  %  init:stop(),
-   ?debugMsg(?OK_MSG),
+    ?assertMatch(ok,application:stop(mysys)),
+    init:stop(),
+    ?debugMsg(?OK_MSG),
     ok.
 %% --------------------------------------------------------------------
 %% Function:start/0 

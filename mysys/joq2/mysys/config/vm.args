@@ -1,0 +1,6 @@
+-sname mysys
+
+-setcookie mysys_cookie
+
++K true
++A30

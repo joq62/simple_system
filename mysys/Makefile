@@ -14,4 +14,4 @@ eunit:
 	erlc -o ebin /home/joq62/erlang/simple_system/service_node/src/*.erl;
 	erlc -o ebin src/*.erl;
 	erlc -o ebin test/*.erl
-	erl -pa ebin -s mysys_eunit start -sname mysys_test -setcookie test -sasl sasl_error_logger true
+	erl -pa ebin -s mysys_eunit start -sname mysys_test -setcookie test -config rb.config

@@ -1,0 +1,15 @@
+{application, mysys,
+ [{description, "My simple system"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, {mysys_app, []}},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.

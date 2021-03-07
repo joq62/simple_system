@@ -1,0 +1,8 @@
+run_erl [40367] Sun Mar  7 15:58:52 2021
+Args before exec of shell:
+run_erl [40367] Sun Mar  7 15:58:52 2021
+argv[0] = sh
+run_erl [40367] Sun Mar  7 15:58:52 2021
+argv[1] = -c
+run_erl [40367] Sun Mar  7 15:58:52 2021
+argv[2] = exec /home/joq62/erlang/simple_system/mysys/joq/bin/start_erl /home/joq62/erlang/simple_system/mysys/joq /home/joq62/erlang/simple_system/mysys/joq/releases /home/joq62/erlang/simple_system/mysys/joq/releases/start_erl.data
