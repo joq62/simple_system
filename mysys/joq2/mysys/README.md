@@ -1,7 +1,7 @@
 mysys
 =====
 
-My simple system
+simple system
 
 Build
 -----
